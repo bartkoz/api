@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class Type(Enum):
-    available = ('personal-accident', _('Personal accident'))
+    personal_accident = ('personal-accident', _('Personal accident'))
 
     @classmethod
     def get_value(cls, member):
