@@ -5,8 +5,7 @@ from insurance.models import Customer, PolicyRequest
 
 class CustomerSerializer(serializers.ModelSerializer):
 
-    dob = serializers.DateField(
-        input_formats=["%d-%m-%Y", ], format=["%d-%m-%Y", ])
+    dob = serializers.DateField(input_formats=["%d-%m-%Y", ])
 
     class Meta:
         model = Customer
